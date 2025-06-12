@@ -1,12 +1,12 @@
 using UnityEngine;
 
-namespace UVRDK {
+namespace UVRDK.Network {
     /// <summary>
-    /// Placeholder for the XRNetCore component.
+    /// Minimal network stub for sending player state.
     /// </summary>
     public class XRNetCore : MonoBehaviour {
-        void Awake() {
-            Debug.Log("XRNetCore initialized.");
+        public void SendState(Vector3 position) {
+            Debug.Log($"Send position {position}");
         }
     }
 }

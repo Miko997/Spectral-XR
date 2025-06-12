@@ -1,12 +1,16 @@
 using UnityEngine;
 
-namespace UVRDK {
+namespace UVRDK.Interaction {
     /// <summary>
-    /// Placeholder for the XRInteractionSuite component.
+    /// Provides simple grab interactions for VR objects.
     /// </summary>
     public class XRInteractionSuite : MonoBehaviour {
+        public GrabInteractor leftHand;
+        public GrabInteractor rightHand;
+
         void Awake() {
-            Debug.Log("XRInteractionSuite initialized.");
+            if (leftHand == null || rightHand == null)
+                Debug.LogWarning("GrabInteractors not assigned.");
         }
     }
 }
