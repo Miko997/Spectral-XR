@@ -1,4 +1,24 @@
- 6g5t8x-codex/create-uvrdk-project-plan
+        public InputMapper mapper;
+        public event System.Action<InputEvent> OnInputEvent;
+
+        void Awake() {
+            if (mapper == null)
+                mapper = ScriptableObject.CreateInstance<InputMapper>();
+        }
+            if (!providers.Contains(provider)) {
+                provider.OnInputEvent += HandleProviderEvent;
+            }
+        }
+
+        void OnDisable() {
+            foreach (var p in providers)
+                p.OnInputEvent -= HandleProviderEvent;
+        }
+
+        void HandleProviderEvent(InputEvent evt) {
+            if (mapper != null && mapper.TryGetCommon(evt.Control, out var common))
+                evt.Control = common;
+            OnInputEvent?.Invoke(evt);
 using System.Collections.Generic;
 using UnityEngine;
 using UVRDK.Input;

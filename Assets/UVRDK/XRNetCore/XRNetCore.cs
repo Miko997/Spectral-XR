@@ -1,6 +1,8 @@
 using UnityEngine;
 
- 6g5t8x-codex/create-uvrdk-project-plan
+    /// Minimal network stub for sending player state. See
+    /// <see cref="TransformBroadcaster"/> and <see cref="TransformReceiver"/> for
+    /// a basic example of position replication.
 namespace UVRDK.Network {
     /// <summary>
     /// Minimal network stub for sending player state.

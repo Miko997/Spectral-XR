@@ -1,7 +1,16 @@
 # Ultimate VR Unity DevKit (UVRDK)
 
- 6g5t8x-codex/create-uvrdk-project-plan
-UVRDK is an MIT-licensed Unity package focused on removing the common hurdles of VR development. It provides a unified input system, physics based interactions, smooth locomotion, performance utilities, live iteration tools and optional networking support.
+- **XRInputHub** – collects input from multiple providers and exposes a common interface.
+  Events from providers are normalised through an `InputMapper` and re-emitted so
+  gameplay scripts only listen once.
+- **XRNetCore** – UDP-based TransformBroadcaster and TransformReceiver for simple
+  position replication.
+
+### Networking Example
+
+Attach `TransformBroadcaster` to a moving object and `TransformReceiver` on
+another instance to replicate position over UDP. Adjust the port and host fields
+in the inspector as needed.
 
 ## Modules
 
