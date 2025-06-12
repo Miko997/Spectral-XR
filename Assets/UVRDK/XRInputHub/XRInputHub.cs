@@ -1,3 +1,4 @@
+ 6g5t8x-codex/create-uvrdk-project-plan
 using System.Collections.Generic;
 using UnityEngine;
 using UVRDK.Input;
@@ -21,6 +22,17 @@ namespace UVRDK {
         void Update() {
             foreach (var provider in providers)
                 provider.Update();
+
+using UnityEngine;
+
+namespace UVRDK {
+    /// <summary>
+    /// Placeholder for the XRInputHub component.
+    /// </summary>
+    public class XRInputHub : MonoBehaviour {
+        void Awake() {
+            Debug.Log("XRInputHub initialized.");
+ main
         }
     }
 }
