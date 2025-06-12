@@ -27,6 +27,10 @@ The `Tools/BuildCLI.cs` file exposes a `BuildCLI.Build` method that can be invok
 unity -batchmode -executeMethod BuildCLI.Build -quit
 ```
 
+### Version Control Notes
+
+The repository includes a `.gitattributes` file to enforce consistent line endings across operating systems. This helps avoid merge conflicts when collaborating.
+
 ## Licence
 
 UVRDK is released under the MIT licence. See [LICENSE](LICENSE) for details.
