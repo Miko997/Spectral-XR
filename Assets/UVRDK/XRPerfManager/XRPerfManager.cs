@@ -1,4 +1,8 @@
 using UnityEngine;
+ qk9gpq-codex/create-uvrdk-project-plan
+
+ 6g5t8x-codex/create-uvrdk-project-plan
+ main
 using UnityEngine.UI;
 
 namespace UVRDK {
@@ -15,6 +19,19 @@ namespace UVRDK {
                 float fps = 1f / deltaTime;
                 hudText.text = $"FPS: {fps:F1}";
             }
+ qk9gpq-codex/create-uvrdk-project-plan
+
+
+
+namespace UVRDK {
+    /// <summary>
+    /// Placeholder for the XRPerfManager component.
+    /// </summary>
+    public class XRPerfManager : MonoBehaviour {
+        void Awake() {
+            Debug.Log("XRPerfManager initialized.");
+ main
+ main
         }
     }
 }
