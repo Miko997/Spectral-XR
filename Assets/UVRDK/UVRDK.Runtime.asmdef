@@ -1,0 +1,19 @@
+{
+  "name": "UVRDK.Runtime",
+  "references": [],
+  "optionalUnityReferences": [],
+  "includePlatforms": [
+    "Editor",
+    "WindowsStandalone64",
+    "OSXUniversal",
+    "Android"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
