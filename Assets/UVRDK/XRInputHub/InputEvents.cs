@@ -15,6 +15,6 @@ namespace UVRDK.Input {
 
     public interface IXRInputProvider {
         event Action<InputEvent> OnInputEvent;
-        void Update();
+        void PollInput();
     }
 }

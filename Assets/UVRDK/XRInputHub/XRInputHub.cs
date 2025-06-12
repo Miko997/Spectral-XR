@@ -15,7 +15,7 @@ namespace UVRDK {
         private readonly List<IXRInputProvider> providers = new();
  qk9gpq-codex/create-uvrdk-project-plan
         public InputMapper mapper;
-        public event System.Action<InputEvent> OnInputEvent;
+                provider.PollInput();
 
         void Awake() {
             if (mapper == null)

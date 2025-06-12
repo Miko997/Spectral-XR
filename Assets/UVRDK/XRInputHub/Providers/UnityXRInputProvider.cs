@@ -20,7 +20,7 @@ namespace UVRDK.Input {
                 rightHand = rightHandDevices[0];
         }
 
-        public void Update() {
+        public void PollInput() {
             if (leftHand.isValid && leftHand.TryGetFeatureValue(CommonUsages.trigger, out float leftTrigger)) {
                 OnInputEvent?.Invoke(new InputEvent {
                     Type = InputEventType.Axis,
